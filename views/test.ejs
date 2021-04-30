@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet/less" type="text/css" href="/stylesheets/style.less">    
+    <script type="text/javascript" src="/scripts/less-3.9.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <button id=btStart>START</button>
+    <button id=btStop disabled>STOP</button>
+    <p>Id : 42</p>
+    <p id=state>State : Unavailable</p>
+    <p id=mission>Mission : N/A</p>
+    <p id=user>User : N/A</p>        
+    <div id="traffic-light">
+        <input type="radio" name="traffic-light-color" id="color1" value="color1"/>
+        <input type="radio" name="traffic-light-color" id="color2" value="color2" disabled/>
+        <input type="radio" name="traffic-light-color" id="color3" value="colo3" disabled/>
+    </div>        
+    <script src="/scripts/manager.js"></script>
+</body>
+</html>
